@@ -1,5 +1,38 @@
 # @backstage/plugin-catalog-backend
 
+## 1.5.0-next.2
+
+### Minor Changes
+
+- b2e6cb6acf: Added a new method `addLocationAnalyzers` to the `CatalogBuilder`. With this you can add location analyzers to your catalog. These analyzers will be used by the /analyze-location endpoint to decide if the provided URL contains any catalog-info.yaml files already or not.
+
+  Moved the following types from this package to `@backstage/plugin-catalog-backend`.
+
+  - AnalyzeLocationResponse
+  - AnalyzeLocationRequest
+  - AnalyzeLocationExistingEntity
+  - AnalyzeLocationGenerateEntity
+  - AnalyzeLocationEntityField
+
+### Patch Changes
+
+- 2d3a5f09ab: Use `response.json` rather than `response.send` where appropriate, as outlined in `SECURITY.md`
+- Updated dependencies
+  - @backstage/plugin-catalog-node@1.2.0-next.2
+  - @backstage/plugin-catalog-common@1.0.7-next.2
+  - @backstage/backend-common@0.15.2-next.2
+  - @backstage/backend-plugin-api@0.1.3-next.2
+  - @backstage/plugin-permission-node@0.6.6-next.2
+  - @backstage/catalog-client@1.1.1-next.2
+  - @backstage/catalog-model@1.1.2-next.2
+  - @backstage/config@1.0.3-next.2
+  - @backstage/errors@1.1.2-next.2
+  - @backstage/integration@1.3.2-next.2
+  - @backstage/types@1.0.0
+  - @backstage/plugin-permission-common@0.6.5-next.2
+  - @backstage/plugin-scaffolder-common@1.2.1-next.2
+  - @backstage/plugin-search-common@1.1.0-next.2
+
 ## 1.4.1-next.1
 
 ### Patch Changes
